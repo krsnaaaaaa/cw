@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is an e-commerce website that sells different types of printers">
+    <meta name="keywords" content="Printer,Dot Matrix Printer, Inkjet Printer, Laser Printer, Mobile Printer">
+    <meta name="author" content="Chirag K.C, Nissan Rai, Purnika Khadka, Rohan Prasad Adhikari">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="/Javascript/Script.js"></script>
+
+    <!--Internal Css  -->
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            color: antiquewhite;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header or Navigation bar are coded below-->
+    <nav>
+        <header>
+
+            <!-- Logo of the site is embeded here-->
+
+            <a href="/Home.html"><img src="/Images/logo.png" style="width: 350px;;" /></a>
+            <div class="menu">
+
+                <a href="/Home.html" class="current-page">Home</a>
+                <a target="_blank" href="/Pages_HTML/Product.html">Products</a>
+                <a target="_blank" href="">Blog</a>
+                <a target="_blank" href="">Research</a>
+                <a target="_blank" href="">About Us</a>
+
+                <!--This section is for contact us button-->
+
+
+            </div>
+            <a target="_blank" href="/Pages_HTML/Contact Us.html" class="btn">Contact Us</a>
+
+        </header>
+    </nav>
+
+
+    <div class="contact-form">
+        <h1 style="color: antiquewhite; font-size: 60px; font-weight: 500px; text-align: center;">Contact Us</h1> <br>
+        <br>
+        <form id="myForm" onsubmit="return validateForm()">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Last Name" required>
+            <br><br>
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Last Name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Any Queries or Suggestions" required></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Sections -->
+
+    <section>
+        <footer>
+
+            <p style="font-size: 30px; font-weight: bolder;"> Team Members <br> </p>
+            <p style="font-size: 20px;"> Chirag K.C, Nissan Rai, Purnika Khadka, Rohan Adhikari</p>
+
+
+            <!-- Social Media icons and link -->
+
+
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/"><img src="/Images/fblogo.jpg" alt="Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="/Images/instalogo.jpg"
+                        alt="Instagram"></a>
+                <a target="_blank" href="https://www.whatsapp.com/"><img src="/Images/whlogo.jpg" alt="Whatsapp"></a>
+                <a target="_blank" href="https://web.telegram.org/k/"><img src="/Images/tellogo.jpg" alt="Telegram"></a>
+            </div>
+            <p> &copy;INKcredible 2024, By Team 2 N7</p>
+
+        </footer>
+    </section>
+    <!--This Javascript is for the menu or navigation bar of the homepage it makes sticky menu when we scroll down -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>

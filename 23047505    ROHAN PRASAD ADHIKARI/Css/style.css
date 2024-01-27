@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+   min-height: 100vh; 
+   background-color: black;
+}
+
+
+ header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+ }
+ header.sticky{
+    background-color: crimson;
+     padding: 20px 100px;
+ }
+
+ header.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ header .menu a{
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 1s;
+ }
+
+ header .menu a:hover{
+    color: black;
+    background: crimson;
+ }
+
+ header.btn{
+    color: antiquewhite;
+    font-size:25px ;
+    cursor: pointer;
+    display: none;
+ }
+ .btn{
+    background-color: crimson;
+    color: antiquewhite;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform:scale(1.2)
+}
+
+.section-1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:url(bg.jpg)  ;
+    background-size: cover;
+    background-position: center;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+ .section-two{
+    width: 90%;
+   align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url(Images/Con-2.jpg);
+    padding: 50px 50px;
+    margin-left: 5%;
+    text-align: center;
+ }
+
+ .products{
+  
+   background-color: black;
+   width: 100%;
+   padding: 100px 0px;
+ }
+
+ .title h2{
+   color: antiquewhite;
+   font-size: 75px;
+   width: 1130px;
+   margin: 30px auto;
+   text-align: center;
+ }
+
+ .box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 600px;
+ }
+ .card{
+   height: 600px;
+   width: 400px;
+   padding: 20px 35px;
+   background: #191919;
+   border-radius: 20px;
+   margin: 15px;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+ }
+
+ .button{
+   background-color: crimson;
+   color: antiquewhite;
+   text-decoration: none;
+   border:2px solid transparent;
+   font-weight: bold;
+   padding: 13px 30px;
+   border-radius: 30px;
+   transition: .4s;
+  
+ }
+
+ .button:hover{
+   background-color: transparent;
+   border: 2px solid crimson;
+   cursor: pointer;
+ }
+
+ .contact-form {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  border: 2px solid antiquewhite;
+  padding: 20px;
+  color: crimson;
+  background: black;
+ 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid antiquewhite;
+  margin-bottom: 10px;
+  background : #191919;
+  color:antiquewhite;
+}
+
+button[type="submit"] {
+  background-color: crimson;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ footer{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   background: #191919;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .social{
+   display: flex;
+
+ }
+.social a{
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 22px 10px;
+}
+
+.printers h2 {
+ color: antiquewhite;
+ font-size: 40px;
+ font-weight: bolder;
+ text-align: center;
+ margin-top: 100px;
+
+}
